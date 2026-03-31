@@ -1,4 +1,3 @@
-import React from 'react';
 import { FiMapPin, FiPhone } from 'react-icons/fi';
 
 const Location = () => {
@@ -42,14 +41,8 @@ const Location = () => {
 
         {/* Map placeholder */}
         <div className="w-full h-[400px] md:h-[600px] rounded-[2rem] overflow-hidden bg-gray-200">
-           {/* Using a static map image for demonstration as per the design mock, but a real map integration (Google Maps/Mapbox) can be placed here */}
-           {/* <img 
-              src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2674&auto=format&fit=crop" 
-              alt="Map Location" 
-              className="w-full h-full object-cover grayscale opacity-80"
-           /> */}
-           
-<iframe className='w-full h-full object-cover opacity-80' src="https://yandex.ru/map-widget/v1/?um=constructor%3A1deb371678dfcb44b7940111b37400e964d4a8ddb8ca94e11394d82d70694841&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+          
+          <iframe className='w-full h-full object-cover opacity-80' src="https://yandex.ru/map-widget/v1/?um=constructor%3A1deb371678dfcb44b7940111b37400e964d4a8ddb8ca94e11394d82d70694841&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
 
         </div>
       </div>

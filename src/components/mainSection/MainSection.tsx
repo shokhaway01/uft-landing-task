@@ -1,4 +1,3 @@
-import React from 'react';
 import Subtract from '../../assets/Subtract.svg';
 
 const MainSection = () => {

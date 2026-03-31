@@ -1,4 +1,3 @@
-import React from 'react';
 import { FiArrowDownRight } from 'react-icons/fi';
 
 const Gallery = () => {

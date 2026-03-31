@@ -1,4 +1,3 @@
-import React from 'react';
 import { FiInstagram, FiLinkedin, FiSend } from 'react-icons/fi';
 import Group from './../../assets/Group.png';
 
