@@ -3,7 +3,7 @@ import { FiMapPin, FiPhone } from 'react-icons/fi';
 const Location = () => {
   return (
     <section className="w-full py-16 md:py-24 px-4 md:px-8 bg-white">
-      <div className="max-w-[1400px] mx-auto">
+      <div className="max-w-350 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
           
           {/* Left Text */}
@@ -40,9 +40,9 @@ const Location = () => {
         </div>
 
         {/* Map placeholder */}
-        <div className="w-full h-[400px] md:h-[600px] rounded-[2rem] overflow-hidden bg-gray-200">
+        <div className="w-full h-100 md:h-150 rounded-4xl overflow-hidden bg-gray-200">
           
-          <iframe className='w-full h-full object-cover opacity-80' src="https://yandex.ru/map-widget/v1/?um=constructor%3A1deb371678dfcb44b7940111b37400e964d4a8ddb8ca94e11394d82d70694841&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+          <iframe className='w-full h-full object-cover opacity-80' src="https://yandex.ru/map-widget/v1/?um=constructor%3A1deb371678dfcb44b7940111b37400e964d4a8ddb8ca94e11394d82d70694841&amp;source=constructor" width="500" height="400" frameBorder="0"></iframe>
 
         </div>
       </div>
