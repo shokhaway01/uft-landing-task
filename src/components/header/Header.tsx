@@ -35,4 +35,5 @@ const Header = ({ dict, lang }: HeaderProps) => {
   );
 };
 
+// Component is exported as default for use in other parts of the application
 export default Header;
