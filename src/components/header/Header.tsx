@@ -10,20 +10,27 @@ const Header = () => {
           Power Build Construction
           </div>
         <nav className="hidden lg:flex items-center space-x-10 text-[15px] font-semibold text-[#4B5563]">
-          <a href="#" className="hover:text-primary-dark transition-colors">Home</a>
-          <a href="#" className="hover:text-primary-dark transition-colors">About Us</a>
-          <a href="#" className="hover:text-primary-dark transition-colors">Projects</a>
-          <a href="#" className="hover:text-primary-dark transition-colors">Services</a>
+          <a href="#home" className="hover:text-primary-dark transition-colors">Home</a>
+          <a href="#about" className="hover:text-primary-dark transition-colors">About Us</a>
+          <a href="#projects" className="hover:text-primary-dark transition-colors">Projects</a>
+          <a href="#services" className="hover:text-primary-dark transition-colors">Services</a>
         </nav>
         </div>
 
         {/* Navigation - hidden on mobile */}
 
         {/* CTA Button */}
-        <button className="flex items-center space-x-2 bg-primary-dark hover:bg-primary-light text-white px-6 py-3 rounded-full text-[15px] font-medium transition-colors border border-transparent">
+        <div className="flex items-center space-x-4">
+            <select className='px-4 py-2 bg-white border border-gray-300 rounded-full text-[14px] font-medium text-[#4B5563] hover:border-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark focus:ring-offset-2 transition-all cursor-pointer appearance-none shadow-sm hover:shadow-md'>
+              <option value="ru">Русский</option>
+              <option value="en">English</option>
+              <option value="uz">O'zbekcha</option>
+            </select>
+          <button className="flex items-center space-x-2 bg-primary-dark hover:bg-primary-light text-white px-6 py-3 rounded-full text-[15px] font-medium transition-colors border border-transparent">
           <span>Contact Us</span>
           <FiArrowUpRight className="text-xl" />
         </button>
+        </div>
       </div>
     </header>
   );

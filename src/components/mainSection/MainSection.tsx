@@ -2,7 +2,7 @@ import Subtract from '../../assets/Subtract.svg';
 
 const MainSection = () => {
   return (
-    <section className="w-full pt-32 pb-4 px-4 md:px-8 bg-white">
+    <section id='home' className="w-full pt-32 pb-4 px-4 md:px-8 bg-white">
       <div className="max-w-[1352px] mx-auto relative">
         <div className="w-full relative">
           <img src={Subtract} alt="Hero Background with dynamic cut-out" className="w-full h-auto drop-shadow-sm" />

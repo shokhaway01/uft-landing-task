@@ -1,6 +1,6 @@
 const AboutUs = () => {
   return (
-    <section className="w-full py-16 md:py-24 px-4 md:px-8 bg-white">
+    <section id="about" className="w-full py-16 md:py-24 px-4 md:px-8 bg-white">
       <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
         {/* Left Text */}
         <div>

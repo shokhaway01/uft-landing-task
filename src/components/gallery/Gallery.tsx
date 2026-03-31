@@ -2,7 +2,7 @@ import { FiArrowDownRight } from 'react-icons/fi';
 
 const Gallery = () => {
   return (
-    <section className="w-full py-16 md:py-24 px-4 md:px-8 bg-white">
+    <section id='projects' className="w-full py-16 md:py-24 px-4 md:px-8 bg-white">
       <div className="max-w-[1400px] mx-auto">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
           

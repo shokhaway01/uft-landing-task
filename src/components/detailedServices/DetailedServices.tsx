@@ -9,7 +9,7 @@ const DetailedServices = () => {
   ];
 
   return (
-    <section className="w-full py-16 px-4 md:px-8 bg-white">
+    <section id="services" className="w-full py-16 px-4 md:px-8 bg-white">
       <div className="max-w-[1400px] mx-auto bg-primary-dark rounded-[2rem] md:rounded-[3rem] p-8 md:p-16 text-white min-h-[600px] flex flex-col justify-center">
         
         <div className="flex flex-col xl:flex-row gap-12">

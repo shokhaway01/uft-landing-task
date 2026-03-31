@@ -1,20 +1,24 @@
+import Card1 from '../../assets/card-1.png';
+import Card2 from '../../assets/card-2.png';
+import Card3 from '../../assets/card-3.png';
+
 
 const Method = () => {
   const approaches = [
     {
       title: "Концепт и архитектура",
       desc: "Разработка архитектурной концепции и проектной документации.",
-      image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&auto=format&fit=crop"
+      image: Card1
     },
     {
       title: "Проектирование и планирование",
       desc: "Техническое проектирование, расчеты и координация процессов.",
-      image: "https://images.unsplash.com/photo-1541888081622-1ca3bb21b0dc?w=800&auto=format&fit=crop"
+      image: Card2
     },
     {
       title: "Строительство и Сдача",
       desc: "Реализация проекта с контролем сроков, бюджета и качества.",
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356f12?w=800&auto=format&fit=crop"
+      image: Card3
     }
   ];
 
