@@ -13,7 +13,9 @@ const Header = ({ dict, lang }: HeaderProps) => {
       <div className="max-w-[1352px] mx-auto flex items-center justify-between">
         {/* Logo + Nav */}
         <div className="text-xl md:text-[26px] md:flex gap-5 font-semibold text-primary-dark tracking-tight">
-          <div>Power Build Construction</div>
+          <a href="#home" className="hover:text-primary-dark transition-colors">
+            Power Build Construction
+          </a>
           <nav className="hidden lg:flex items-center space-x-10 text-[15px] font-semibold text-[#4B5563]">
             <a href="#home" className="hover:text-primary-dark transition-colors">{dict.navHome}</a>
             <a href="#about" className="hover:text-primary-dark transition-colors">{dict.navAbout}</a>
@@ -25,7 +27,7 @@ const Header = ({ dict, lang }: HeaderProps) => {
         {/* CTA + Language */}
         <div className="flex items-center space-x-4">
           <LanguageSwitcher currentLang={lang} />
-          <a href="#contact" className="flex items-center space-x-2 bg-primary-dark hover:bg-primary-light text-white px-6 py-2 rounded-full text-[15px] font-medium transition-colors border border-transparent">
+          <a href="#contact" className="flex items-center space-x-2 bg-primary-dark hover:bg-primary-light text-white px-6 py-2 rounded-full text-[15px] font-medium transition-colors border border-transparent text-sm">
             <span>{dict.contactUs}</span>
             <FiArrowUpRight className="text-xl" />
           </a>
