@@ -30,7 +30,7 @@ const Services = ({ dict }: ServicesProps) => {
                 className={`rounded-3xl p-8 flex flex-col justify-between min-h-[280px] ${style.bg} transition-transform hover:-translate-y-2 duration-300`}
               >
                 <div>
-                  <h3 className={`text-xl font-semibold mb-4 ${style.text}`}>{service.title}</h3>
+                  <h3 className={`text-xl max-w-[150px] font-semibold mb-4 ${style.text}`}>{service.title}</h3>
                   <p className={`text-sm leading-relaxed ${style.descColor}`}>{service.desc}</p>
                 </div>
                 <div className="mt-8 flex justify-end">

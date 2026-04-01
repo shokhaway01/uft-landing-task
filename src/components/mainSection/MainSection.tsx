@@ -78,8 +78,8 @@ const MainSection = ({ dict }: MainSectionProps) => {
             </div>
 
             {/* CTA in cut-out area */}
-            <div className="absolute bottom-0 left-0 w-[40.4%] h-[13.3%] flex items-center justify-center p-2 lg:p-4">
-              <button className="bg-primary-dark hover:bg-primary text-white w-full max-w-[420px] py-3 lg:py-4 rounded-full text-sm lg:text-base font-medium transition-colors shadow-md">
+            <div className="absolute bottom-0 left-0 w-[40.4%] h-[13.3%] flex items-start justify-start p-2 lg:p-4">
+              <button className="bg-primary-dark hover:bg-primary text-white w-full max-w-[520px] py-3 lg:py-4 rounded-full text-sm lg:text-base font-medium transition-colors shadow-md">
                 {dict.cta}
               </button>
             </div>

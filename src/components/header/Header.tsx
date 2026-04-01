@@ -25,10 +25,10 @@ const Header = ({ dict, lang }: HeaderProps) => {
         {/* CTA + Language */}
         <div className="flex items-center space-x-4">
           <LanguageSwitcher currentLang={lang} />
-          <button className="flex items-center space-x-2 bg-primary-dark hover:bg-primary-light text-white px-6 py-3 rounded-full text-[15px] font-medium transition-colors border border-transparent">
+          <a href="#contact" className="flex items-center space-x-2 bg-primary-dark hover:bg-primary-light text-white px-6 py-3 rounded-full text-[15px] font-medium transition-colors border border-transparent">
             <span>{dict.contactUs}</span>
             <FiArrowUpRight className="text-xl" />
-          </button>
+          </a>
         </div>
       </div>
     </header>

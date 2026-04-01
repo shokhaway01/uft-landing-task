@@ -7,9 +7,9 @@ interface LocationProps {
 
 const Location = ({ dict }: LocationProps) => {
   return (
-    <section className="w-full py-16 md:py-24 px-4 md:px-8 bg-white">
-      <div className="max-w-350 mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
+    <section id='contact' className="w-full py-16 md:py-24 px-4 md:px-8 bg-white">
+      <div className="max-w-350 mx-auto flex flex-col items-center">
+        <div className="self-start grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12 md:ml-10">
 
           {/* Left Text */}
           <div>
@@ -47,11 +47,11 @@ const Location = ({ dict }: LocationProps) => {
         </div>
 
         {/* Map */}
-        <div className="w-full h-100 md:h-150 rounded-4xl overflow-hidden bg-gray-200">
+        <div className="w-full max-w-[1340px] h-100 md:h-150 rounded-4xl overflow-hidden bg-gray-200">
           <iframe
-            className="w-full h-full object-cover opacity-80"
+            className="w-full h-full object-contain opacity-80"
             src="https://yandex.ru/map-widget/v1/?um=constructor%3A1deb371678dfcb44b7940111b37400e964d4a8ddb8ca94e11394d82d70694841&amp;source=constructor"
-            width="500"
+            width="400"
             height="400"
             style={{ border: 0 }}
           />
