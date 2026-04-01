@@ -9,10 +9,10 @@ interface FooterProps {
 
 const Footer = ({ dict }: FooterProps) => {
   return (
-    <footer className="w-full bg-[#061b14] text-white pt-20 pb-8 px-4 md:px-8">
+    <footer className="w-full bg-[#061b14] text-white pt-10 pb-2 px-2 md:px-8">
       <div className="max-w-[1400px] mx-auto">
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-24 mb-16 border-b border-gray-800 pb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-24 mb-0 pb-5">
 
           {/* Logo & Info */}
           <div className="flex flex-col space-y-6">
@@ -54,7 +54,7 @@ const Footer = ({ dict }: FooterProps) => {
         </div>
 
         {/* Copyright */}
-        <div className="text-center text-xs text-gray-500 pb-4">
+        <div className="text-center text-xs text-gray-500 p-4">
           {dict.copyright}
         </div>
 

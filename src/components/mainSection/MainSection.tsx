@@ -28,12 +28,12 @@ const MainSection = ({ dict }: MainSectionProps) => {
               fill
               priority
               sizes="(max-width: 768px) 100vw"
-              className="object-cover object-center"
+              className=" object-cover object-center"
             />
           </div>
 
           {/* Matn: x=16 y=223 */}
-          <div className="absolute left-4 right-4" style={{ top: '223px' }}>
+          <div className="absolute left-4 right-4 top-[100px] md:top-[223px] px-2" style={{ maxWidth: '326px' }}>
             <h1 className="text-[28px] font-semibold text-white leading-tight mb-2">
               {dict.title}
             </h1>
@@ -43,7 +43,7 @@ const MainSection = ({ dict }: MainSectionProps) => {
           </div>
 
           {/* Tugma: x=0 y=399 w=328 (91.6% of 358) h=40 — rasmdan 19px pastga tushadi */}
-          <div className="absolute left-0" style={{ top: '399px', right: '8.4%' }}>
+          <div className="absolute left-0 sm:mt-[1px] mt-[15px] md:mt-0" style={{ top: '399px', right: '8.4%' }}>
             <button className="w-full bg-[#053232] hover:bg-primary text-white px-6 py-2 rounded-[34px] text-base font-medium tracking-tight transition-colors">
               {dict.cta}
             </button>
@@ -54,7 +54,7 @@ const MainSection = ({ dict }: MainSectionProps) => {
 
       {/* ── DESKTOP HERO (≥ md) ── */}
       <div className="hidden md:block px-8">
-        <div className="max-w-[1352px] mx-auto relative">
+        <div className="max-w-[1452px] mx-auto relative">
           <div className="w-full relative">
             <Image
               src="/Subtract.svg"
@@ -78,8 +78,8 @@ const MainSection = ({ dict }: MainSectionProps) => {
             </div>
 
             {/* CTA in cut-out area */}
-            <div className="absolute bottom-0 left-0 w-[40.4%] h-[13.3%] flex items-start justify-start p-2 lg:p-4">
-              <button className="bg-primary-dark hover:bg-primary text-white w-full max-w-[520px] py-3 lg:py-4 rounded-full text-sm lg:text-base font-medium transition-colors shadow-md">
+            <div className="absolute bottom-0 left-0 w-[40.4%] h-[13.3%] flex items-start justify-start p-2 lg:px-0 lg:py-4">
+              <button className="bg-primary-dark hover:bg-primary text-white w-full max-w-[540px] py-3 lg:py-4 rounded-[20px] text-sm lg:text-base font-medium transition-colors shadow-md">
                 {dict.cta}
               </button>
             </div>

@@ -10,7 +10,7 @@ interface HeaderProps {
 const Header = ({ dict, lang }: HeaderProps) => {
   return (
     <header className="w-full pb-3 pt-3 px-4 md:px-8 bg-white fixed top-0 z-50">
-      <div className="max-w-[1352px] mx-auto flex items-center justify-between">
+      <div className="max-w-[1452px] mx-auto flex items-center justify-between">
         {/* Logo + Nav */}
         <div className="text-xl md:text-[26px] md:flex gap-5 font-semibold text-primary-dark tracking-tight">
           <a href="#home" className="hover:text-primary-dark transition-colors">
