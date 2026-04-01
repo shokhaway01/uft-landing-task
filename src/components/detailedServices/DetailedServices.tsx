@@ -21,7 +21,7 @@ const DetailedServices = ({ dict }: DetailedServicesProps) => {
           {dict.items.map((item, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-[24px] lg:rounded-[32px] p-6 md:p-8 lg:p-10 flex flex-col justify-between min-h-[280px] lg:min-h-[320px]"
+              className="bg-white rounded-[24px] lg:rounded-[32px] p-6 md:p-8 lg:p-10 flex flex-col justify-between min-h-[230px] lg:min-h-[250px]"
             >
               <div className="flex justify-end">
                 <span className="text-[48px] lg:text-[56px] font-medium text-[#9ba9a5] leading-none">{item.num}</span>
