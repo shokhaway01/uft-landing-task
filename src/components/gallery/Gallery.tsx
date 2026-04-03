@@ -11,9 +11,6 @@ interface GalleryProps {
 }
 
 interface Project {
-  id: number;
-  image: string;
-  alt: string;
   title: string;
   description: string;
   details: string;
@@ -43,7 +40,7 @@ const projectImages = [
 ];
 
 const Gallery = ({ dict, lang }: GalleryProps) => {
-  const [selectedProject, setSelectedProject] = useState<{ image: string; alt: string; title: string; description: string; details: string } | null>(null);
+  const [selectedProject, setSelectedProject] = useState<(Project & { image: string; alt: string }) | null>(null);
 
   useEffect(() => {
     const onEsc = (e: KeyboardEvent) => {
@@ -53,7 +50,7 @@ const Gallery = ({ dict, lang }: GalleryProps) => {
     return () => window.removeEventListener('keydown', onEsc);
   }, []);
 
-  const openModal = (imgData: typeof projectImages[0], textData: any) => {
+  const openModal = (imgData: typeof projectImages[0], textData: Project) => {
     setSelectedProject({
       image: imgData.image,
       alt: imgData.alt,

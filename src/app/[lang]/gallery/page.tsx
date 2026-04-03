@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import type { Metadata } from 'next';
 import { getDictionary, type Locale } from '@/locales';
 
@@ -12,14 +13,6 @@ export async function generateMetadata({
   return { title: `${dict.galleryPage.title} — ${dict.common.brand}` };
 }
 
-type WorkCard = {
-  id: number
-  title: string
-  description: string
-  deliveryDate: string
-  qualityScore: number
-  image: string
-}
 
 const workMetadata = [
   { id: 1, qualityScore: 4.8, image: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1200&q=80' },
@@ -79,12 +72,15 @@ const Page = async ({ params }: { params: Promise<{ lang: Locale }> }) => {
                 boxShadow: '0 2px 10px rgba(0,0,0,0.06)',
               }}
             >
-              <img
-                src={meta.image}
-                alt={projectText.title}
-                style={{ width: '100%', height: '180px', objectFit: 'cover' }}
-                loading="lazy"
-              />
+              <div style={{ position: 'relative', width: '100%', height: '180px' }}>
+                <Image
+                  src={meta.image}
+                  alt={projectText.title}
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+              </div>
 
               <div style={{ padding: '12px' }}>
                 <h2 style={{ fontSize: '18px', marginBottom: '8px' }}>{projectText.title}</h2>

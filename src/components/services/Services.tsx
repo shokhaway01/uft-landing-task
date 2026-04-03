@@ -16,11 +16,6 @@ const cardStyles = [
   { bg: 'bg-primary-dark', text: 'text-white', descColor: 'text-gray-300' },
 ];
 
-const loremFallback = [
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.',
-  'Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.',
-  'Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra.',
-];
 
 const serviceImages = [
   'https://picsum.photos/seed/service-1/1200/600',
@@ -48,13 +43,7 @@ const Services = ({ dict }: ServicesProps) => {
     return () => window.removeEventListener('keydown', onEsc);
   }, [activeIndex]);
 
-  const details = (activeService as { details?: string | string[] } | null)?.details;
 
-  const paragraphs = Array.isArray(details)
-    ? details
-    : typeof details === 'string'
-    ? details.split('\n').filter(Boolean)
-    : loremFallback;
 
   const activeImage =
     activeIndex !== null
