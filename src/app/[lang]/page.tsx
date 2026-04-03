@@ -20,12 +20,8 @@ export async function generateMetadata({
   params: Promise<{ lang: Locale }>;
 }): Promise<Metadata> {
   const { lang } = await params;
-  const titles: Record<Locale, string> = {
-    ru: 'Power Build Construction — Строительное бюро полного цикла',
-    en: 'Power Build Construction — Full-Cycle Construction Bureau',
-    uz: "Power Build Construction — To'liq tsiklli qurilish byurosi",
-  };
-  return { title: titles[lang] };
+  const dict = getDictionary(lang);
+  return { title: dict.metadata.title };
 }
 
 export default async function LangPage({
@@ -38,13 +34,13 @@ export default async function LangPage({
 
   return (
     <div className="w-full min-h-screen bg-bg-gray">
-      <Header dict={dict.header} lang={lang} />
+      <Header dict={{ header: dict.header, common: dict.common }} lang={lang} />
       <main>
         <MainSection dict={dict.mainSection} />
         <AboutUs dict={dict.aboutUs} />
         <Services dict={dict.services} />
         <Method dict={dict.method} />
-        <Gallery dict={dict.gallery} />
+        <Gallery dict={dict.gallery} lang={lang} />
         <DetailedServices dict={dict.detailedServices} />
         <Location dict={dict.location} />
       </main>

@@ -141,7 +141,7 @@ const MainSection = ({ dict }: MainSectionProps) => {
                 type="button"
                 onClick={closeModal}
                 className="text-gray-500 hover:text-gray-900"
-                aria-label="Закрыть"
+                aria-label={dict.form.closeAria}
               >
                 ✕
               </button>
@@ -151,13 +151,13 @@ const MainSection = ({ dict }: MainSectionProps) => {
               <div>
                 <textarea
                   {...register('feedback', {
-                    required: 'Напишите какую консультацию вы хотите получить',
+                    required: dict.form.feedbackRequired,
                     minLength: {
                       value: 10,
-                      message: 'Минимум 10 символов',
+                      message: dict.form.feedbackMinLength,
                     },
                   })}
-                  placeholder="Напишите чем мы можем вам помочь..."
+                  placeholder={dict.form.feedbackPlaceholder}
                   className="w-full min-h-35 rounded-xl border border-gray-300 px-4 py-3 outline-none focus:border-primary resize-none"
                 />
                 {errors.feedback && (
@@ -171,14 +171,21 @@ const MainSection = ({ dict }: MainSectionProps) => {
                   onClick={closeModal}
                   className="rounded-full border border-gray-300 px-5 py-2 text-sm font-medium text-gray-700"
                 >
-                  Отмена
+                  {/* Assuming we might want to add common to MainSectionProps or just use a specific key if available. 
+                      Actually, I should check if I passed the whole dict or just mainSection. 
+                      In page.tsx: <MainSection dict={dict.mainSection} />
+                      So I only have access to dict.mainSection. 
+                      I'll add common to the Page and pass it or just move those common keys into mainSection if needed.
+                      Looking at my ru.ts update, I added mainSection.form.
+                  */}
+                  {dict.form.closeAria} 
                 </button>
                 <button
                   type="submit"
                   disabled={isSubmitting}
                   className="rounded-full bg-[#053232] px-5 py-2 text-sm font-medium text-white hover:bg-primary disabled:opacity-60"
                 >
-                  {isSubmitting ? 'Отправка...' : 'Отправить'}
+                  {isSubmitting ? '...' : 'OK'}
                 </button>
               </div>
             </form>

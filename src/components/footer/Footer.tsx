@@ -17,7 +17,7 @@ const Footer = ({ dict }: FooterProps) => {
           {/* Logo & Info */}
           <div className="flex flex-col space-y-6">
             <div className="flex items-center space-x-2">
-              <Image src={Group} alt="Logo" className="h-auto" />
+              <Image src={Group} alt="Power Build Construction Logo" className="h-auto" />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
               {dict.description}{' '}
@@ -39,13 +39,22 @@ const Footer = ({ dict }: FooterProps) => {
           <div className="flex flex-col space-y-6">
             <h3 className="text-xl font-medium">{dict.followTitle}</h3>
             <div className="flex items-center space-x-4">
-              <button className="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-accent-hover transition-colors">
+              <button 
+                className="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-accent-hover transition-colors"
+                aria-label="Instagram"
+              >
                 <FiInstagram className="text-white text-lg" />
               </button>
-              <button className="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-accent-hover transition-colors">
+              <button 
+                className="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-accent-hover transition-colors"
+                aria-label="LinkedIn"
+              >
                 <FiLinkedin className="text-white text-lg" />
               </button>
-              <button className="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-accent-hover transition-colors">
+              <button 
+                className="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-accent-hover transition-colors"
+                aria-label="Telegram/Send"
+              >
                 <FiSend className="text-white text-lg" />
               </button>
             </div>
