@@ -11,6 +11,7 @@ export const en = {
     description:
       'We provide full-cycle architectural and construction solutions, managing every stage of development — from strategic planning and technical documentation to construction and commissioning.',
     cta: 'Get a Free Consultation',
+    modalTitle: 'Start Your Project with Us',
   },
   aboutUs: {
     title: 'About Us',

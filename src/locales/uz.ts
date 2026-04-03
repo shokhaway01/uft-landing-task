@@ -11,6 +11,7 @@ export const uz = {
     description:
       "Biz to'liq tsiklli arxitektura va qurilish yechimlarini taqdim etamiz — strategik rejalashtirishdan va texnik hujjatlardan tortib, qurilish va ob'ektni topshirishgacha barcha bosqichlarni boshqaramiz.",
     cta: 'Bepul konsultatsiya olish',
+    modalTitle: 'Biz bilan loyihangizni boshlang',
   },
   aboutUs: {
     title: 'Biz haqimizda',
